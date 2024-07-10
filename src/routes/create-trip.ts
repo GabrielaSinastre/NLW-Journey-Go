@@ -18,7 +18,9 @@ export async function createTrip(app: FastifyInstance) {
         emails_to_invite: z.array(z.string().email())
       })
     }
-  }, async (request) => {
+  }, 
+  
+  async (request) => {
     const { destination, starts_at, ends_at, owner_name, owner_email, emails_to_invite } = request.body;
     
     if (dayjs(starts_at).isBefore(new Date())) {

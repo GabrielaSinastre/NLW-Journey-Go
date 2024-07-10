@@ -15,7 +15,9 @@ export async function createActivity(app: FastifyInstance) {
         occurs_at: z.coerce.date(),
       })
     }
-  }, async (request) => {
+  }, 
+  
+  async (request) => {
     const { tripId } = request.params;
     const { title, occurs_at  } = request.body;
     

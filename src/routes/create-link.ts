@@ -14,7 +14,9 @@ export async function createLink(app: FastifyInstance) {
         url: z.string().url(),
       })
     }
-  }, async (request) => {
+  }, 
+  
+  async (request) => {
     const { tripId } = request.params;
     const { title, url  } = request.body;
     
