@@ -1,4 +1,4 @@
-# NLW-Journey-Go
+# NLW-Journey-Node
 A repository to learn NodeTS with Next Level Week, provided by Rocketseat
 
 Prisma
